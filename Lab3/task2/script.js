@@ -1,6 +1,7 @@
 const taskInput = document.querySelector("#new-todo");
 const addTaskBtn = document.querySelector("#add-todo");
 const taskList = document.querySelector("#list-todo");
+const removeAllTaskBtn = document.querySelector("#remove-all");
 
 
 let tasks=[]
@@ -44,6 +45,14 @@ const deleteTask = (index) => {
   renderTasks();
 };
 
+
+const removeAllTask = () => {
+  tasks = []
+
+  renderTasks();
+};
+
 addTaskBtn.addEventListener("click", addTask);
+removeAllTaskBtn.addEventListener("click", removeAllTask);
 
 renderTasks();
