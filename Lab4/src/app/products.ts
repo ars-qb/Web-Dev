@@ -6,7 +6,7 @@ export interface Product {
   rating: number;
   shareUrl: string;
   shopLink: string;
-  image: string;
+  images: string[];
 }
 
 export const products = [
@@ -18,7 +18,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/110044379&text=Samsung%20Galaxy%20A54%205G%208%20%D0%93%D0%91/256%20%D0%93%D0%91%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/samsung-galaxy-a54-5g-8-gb-256-gb-chernyi-110044379/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h81/h13/80435536887838.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h81/h13/80435536887838.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h3b/h88/80435537412126.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hf8/hdc/80435537936414.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hb3/h50/80435538460702.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hc4/h5d/80435538984990.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hc1/h3a/80435539509278.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h81/h59/80435540033566.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hc4/h04/80435540557854.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hbb/h1c/80435541082142.jpg?format=preview-medium']
   },
 
   {
@@ -29,7 +29,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/113138213&text=Apple%20iPhone%2015%20Pro%20256Gb%20%D1%81%D0%B5%D1%80%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-seryi-113138213/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hae/h00/83559620739102.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hae/h00/83559620739102.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hbf/h7c/83559620804638.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h54/haa/83559620870174.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h39/hef/83559620935710.jpg?format=preview-medium']
   },
 
   {
@@ -40,7 +40,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/100692388&text=Apple%20iPhone%2011%20128Gb%20Slim%20Box%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hd8/hac/63897052413982.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hd8/hac/63897052413982.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hed/hb1/63897055559710.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/ha1/h45/63897058377758.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h78/h0f/63897061457950.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hd5/h91/63897064931358.jpg?format=preview-medium']
   },
 
   {
@@ -51,7 +51,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/102743952&text=Apple%2018W%20USB-C%20Power%20Adapter%20%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-18w-usb-c-power-adapter-belyi-102743952/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h1b/hd6/64377056231454.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h1b/hd6/64377056231454.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h93/h72/64377059409950.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h16/h93/64377062064158.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hda/h07/80523585847326.png?format=preview-medium']
   },
 
   {
@@ -62,7 +62,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/104078887&text=Apple%20iPhone%2013%20128Gb%20%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-zelenyi-104078887/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hd1/h2f/64255724159006.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hd1/h2f/64255724159006.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h51/h3e/64255726747678.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hdd/hf3/64255730286622.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h68/hb0/64255733039134.jpg?format=preview-medium']
   },
 
   {
@@ -73,7 +73,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/106363144&text=Apple%20iPhone%2014%20128Gb%20starlight',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-14-128gb-starlight-106363144/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h9f/h49/64481569832990.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h9f/h49/64481569832990.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hab/h36/64481571733534.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/ha4/h8c/64481575665694.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/ha0/h6a/64481577664542.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h6f/h56/64481579663390.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h2d/h5f/64481582612510.jpg?format=preview-medium']
   },
 
   {
@@ -84,7 +84,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/110917697&text=Xiaomi%20Redmi%2012%204G%208%20%D0%93%D0%91/256%20%D0%93%D0%91%20%D1%81%D0%B5%D1%80%D0%B5%D0%B1%D1%80%D0%B8%D1%81%D1%82%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/xiaomi-redmi-12-4g-8-gb-256-gb-serebristyi-110917697/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h54/hfb/81334459990046.png?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h54/hfb/81334459990046.png?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h84/h36/81334460022814.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hac/hf9/81334460055582.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h2e/h6b/81334460121118.png?format=preview-medium']
   },
 
   {
@@ -95,7 +95,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/113138363&text=Apple%20iPhone%2015%20Pro%20Max%20256Gb%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-max-256gb-chernyi-113138363/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hdf/hc7/83559837007902.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hdf/hc7/83559837007902.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h83/h61/83559837073438.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h14/hee/83559837138974.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hbd/h85/83559837204510.jpg?format=preview-medium']
   },
 
   {
@@ -106,7 +106,7 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/113138428&text=Apple%20iPhone%2015%20Pro%20Max%20256Gb%20%D1%81%D0%B8%D0%BD%D0%B8%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-max-256gb-sinii-113138428/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h64/h50/83559848575006.png?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h64/h50/83559848575006.png?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hc5/hce/83559848640542.png?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hab/hed/83559848706078.png?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h82/h9f/83559848771614.png?format=preview-medium']
   },
 
   {
@@ -117,7 +117,7 @@ export const products = [
     rating: 4.5,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/40500508&text=%D0%9A%D0%B0%D0%B1%D0%B5%D0%BB%D1%8C%20Apple%20USB%20Type-C%20-%20Lightning%201%20%D0%BC',
     shopLink: 'https://kaspi.kz/shop/p/kabel-apple-usb-type-c---lightning-1-m-40500508/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hbd/h2f/63829403140126.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hbd/h2f/63829403140126.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hb6/h3a/63829405630494.jpg?format=preview-medium']
   },
 
   {
@@ -128,7 +128,7 @@ export const products = [
     rating: 4.5,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/100322086&text=Xiaomi%20Redmi%20Power%20Bank%2020000%20%D0%BC%D0%90%D1%87%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/xiaomi-redmi-power-bank-20000-mach-chernyi-100322086/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h34/h07/63928978014238.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h34/h07/63928978014238.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h88/h5b/63928980275230.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h08/h51/63928983191582.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hf9/h9f/63929117278238.jpg?format=preview-medium']
   },
 
   {
@@ -139,8 +139,9 @@ export const products = [
     rating: 5.0,
     shareUrl: 'https://t.me/share/url?url=http://localhost:4200/products/102298145&text=Apple%20iPhone%2013%20128Gb%20%D1%80%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9',
     shopLink: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-rozovyi-102298145/?c=750000000',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h16/h64/64000133005342.jpg?format=preview-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/h16/h64/64000133005342.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h89/hd5/64000136019998.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/hf9/hdc/64000138313758.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h02/hdb/64000140935198.jpg?format=preview-medium','https://resources.cdn-kaspi.kz/img/m/p/h01/h7f/64000143032350.jpg?format=preview-medium']
   },
+
 ];
 
 
