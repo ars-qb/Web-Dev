@@ -6,11 +6,7 @@ import { Product, products } from '../products';
 import { CartService } from '../cart.service';
 @Component({
   selector: 'app-product-details',
-  standalone: true,
-  imports: [
-    CurrencyPipe,
-    NgIf
-  ],
+  standalone: false,
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })

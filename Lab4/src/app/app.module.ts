@@ -13,30 +13,31 @@ import { CartComponent } from './cart/cart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import {ShippingComponent} from "./shipping/shipping.component";
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import {ImageGalleryComponent} from "./image-gallery/image-gallery.component";
+
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    ProductAlertsComponent,
+
     RouterModule.forRoot([
       {path: '', component: ProductListComponent},
       {path: 'products/:productId', component: ProductDetailsComponent},
       {path: 'cart', component: CartComponent},
       {path: 'shipping', component: ShippingComponent},
     ]),
-    ProductAlertsComponent,
+
     HttpClientModule,
-    SlickCarouselModule,
-    ImageGalleryComponent
+
 
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
+    ProductDetailsComponent,
+    ProductAlertsComponent,
+    ProductAlertsComponent,
 
   ],
   bootstrap: [

@@ -6,10 +6,7 @@ import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-product-alerts',
-  standalone: true,
-  imports: [
-    NgIf
-  ],
+  standalone: false,
   templateUrl: './product-alerts.component.html',
   styleUrl: './product-alerts.component.css'
 })
