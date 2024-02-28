@@ -11,9 +11,12 @@ export class ProductListComponent {
 
   products = [...products];
 
-  share(shareUrl: string) {
-    window.open(shareUrl, '_blank');
-    window.alert('The product has been shared!');
+  share(product: any) {
+    window.open("https://t.me/share/url?url=" +encodeURIComponent(product.shopLink)+ "&text="+encodeURIComponent(product.name))
+  }
+
+  shareWA(product: any) {
+    window.open("whatsapp://send?text="+encodeURIComponent(product.name))
   }
 
   onNotify() {

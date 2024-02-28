@@ -7,5 +7,6 @@
     <p>Description: {{ product.description }}</p>
     <p>Rating: {{ product.rating }}</p>
 
-    <button type="button" (click)="addToCart(product)">Buy</button>
+    <button type="button" (click)="addToCart(product)">Buy</button><br><br>
+    <button type="button" (click)="go2Kaspi(product.shopLink)">Go to the Kaspi</button>
 </div>
