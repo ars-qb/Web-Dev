@@ -14,9 +14,9 @@
         <p><b>Likes:</b> {{ product.likes }}</p>
         <div class="buttons">
             <button (click)="handleLike()">
-                <fa-icon [icon]="heart"></fa-icon>
+                <fa-icon [icon]="heartIco"></fa-icon>
             </button>
-            <button (click)="handleDelete()">X</button>
+            <button (click)="handleDelete()"><fa-icon [icon]="trashIco"></fa-icon></button>
 
         </div>
     </div>

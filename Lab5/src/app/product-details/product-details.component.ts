@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product, products } from '../products';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faHeart,faTrashCan } from '@fortawesome/free-regular-svg-icons';
 @Component({
   selector: 'app-product-details',
   standalone: false,
@@ -15,7 +15,8 @@ export class ProductDetailsComponent{
   @Output() likesUpdate = new EventEmitter<number>();
   @Output() deleteUpdate = new EventEmitter();
 
-  heart = faHeart;
+  heartIco = faHeart;
+  trashIco = faTrashCan;
   clicked: boolean = false;
 
 
