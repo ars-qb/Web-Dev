@@ -62,7 +62,7 @@ export class AlbumsComponent implements OnInit {
 
     this.albumsService.addAlbum({ userId: this.albums.length+1, id: this.albums.length + 1, title: this.newAlbumTitle }).subscribe(
       (response) => {
-        this.albums.push(response);
+        this.albums.unshift(response);
       },
       (error) => {
         console.log(error);
