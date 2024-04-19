@@ -2,7 +2,7 @@
 
 <div class="list">
   <div *ngFor="let vacancy of vacancies" class="item">
-    <p>Vacancy name: {{ vacancy.name }}</p>
+    <p>Vacancy: <b>{{ vacancy.name }}</b></p>
     <p>Salary: {{ vacancy.salary }}</p>
     <a [routerLink]="['/vacancies', vacancy.id]"> Vacancy Details </a>
   </div>

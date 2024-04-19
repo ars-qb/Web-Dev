@@ -1,6 +1,7 @@
 body {
     padding: 0;
-    margin: 0px;
+    font-family: "Roboto", sans-serif;
+
 }
 
 a {
@@ -12,14 +13,14 @@ li a {
 }
 
 ul {
-    background-color:crimson;
+    background-color:deepskyblue;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 ul li:hover {
-    background-color: darkred;
+    background-color: blue;
 }
 
 ul li a:hover {
